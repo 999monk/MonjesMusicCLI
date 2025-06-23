@@ -1,4 +1,6 @@
-﻿using MonjesMusicCLI.Core.Models;
+﻿using System;
+using System.Collections.Generic;
+using MonjesMusicCLI.Core.Models;
 
 namespace MonjesMusicCLI.UI;
 

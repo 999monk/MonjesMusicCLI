@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 using MonjesMusicCLI.Core.Models;
 using MonjesMusicCLI.Core.Services;
 using MonjesMusicCLI.UI;
