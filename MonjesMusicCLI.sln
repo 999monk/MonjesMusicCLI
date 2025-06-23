@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonjesMusicCLI", "MonjesMusicCLI\MonjesMusicCLI.csproj", "{03A9FAC0-F41F-4472-AA5E-740CD85D9626}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03A9FAC0-F41F-4472-AA5E-740CD85D9626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03A9FAC0-F41F-4472-AA5E-740CD85D9626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03A9FAC0-F41F-4472-AA5E-740CD85D9626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03A9FAC0-F41F-4472-AA5E-740CD85D9626}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
