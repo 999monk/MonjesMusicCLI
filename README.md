@@ -53,7 +53,7 @@ MonjesMusicCLI/
 ├── UI/
 │   └── ConsoleMenu.cs
 ├── Program.cs
-└── MusicInCon.csproj
+└── MonjesMusicCLI.csproj
 ```
 
 ## Dependencias Externas
@@ -63,4 +63,4 @@ MonjesMusicCLI/
 
 ## Versión
 
-v1.0 - Completada y funcional. La aplicación cumple con todos los objetivos establecidos para la versión inicial y está lista para uso.
+v1.0 Completada y funcional. La aplicación cumple con todos los objetivos establecidos para la versión inicial y está lista para uso.

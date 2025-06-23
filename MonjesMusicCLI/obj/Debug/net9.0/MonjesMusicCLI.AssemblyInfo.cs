@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MonjesMusicCLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+aace15a0b3f719339dbc52c4a17ece3aa4f41268")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16ffe3b510b545c48d94e3395ecd4a0b00130276")]
 [assembly: System.Reflection.AssemblyProductAttribute("MonjesMusicCLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MonjesMusicCLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
