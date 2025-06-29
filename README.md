@@ -1,10 +1,10 @@
-﻿# MONJES
+﻿## ytmpv-cli
 
 Interfaz de línea de comandos minimalista para reproducir música vía YouTube con mpv + yt-dlp.
 
-## Descripción
+### Descripción
 
-MONJES es una CLI simple y directa para buscar y reproducir música desde YouTube, sin distracciones. 
+Una CLI simple y directa para buscar y reproducir música desde YouTube, sin distracciones. 
 Usa `yt-dlp` para obtener el audio y `mpv` como motor de reproducción, integrando todo en un solo flujo desde la consola.
 Ideal para acompañarte mientras trabajás, estudiás o te concentrás.
 
@@ -25,14 +25,14 @@ Ideal para acompañarte mientras trabajás, estudiás o te concentrás.
 - [mpv](https://mpv.io/) instalado y en el PATH
 - Conexión a Internet
 
-## Instalación
+### Instalación
 
 1. Clonar el repositorio
 2. Verificar que MPV y yt-dlp estén instalados y accesibles
 3. Compilar con `dotnet build`
 4. Ejecutar con `dotnet run`
 
-## Cómo usar
+### Cómo usar
 
 1. Ejecutá `dotnet run`
 2. Ingresá el nombre del tema/artista
