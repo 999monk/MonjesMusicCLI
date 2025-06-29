@@ -33,7 +33,6 @@ public class YoutubeDlService
             
             proceso.Start();
             
-            // Leer la salida
             string salida = await proceso.StandardOutput.ReadToEndAsync();
             string error = await proceso.StandardError.ReadToEndAsync();
                 
@@ -43,8 +42,7 @@ public class YoutubeDlService
             {
                 throw new Exception($"Error ejecutando yt-dlp: {error}");
             }
-                
-            // Parsear resultados
+            
             resultados = ParsearResultados(salida);
                 
             return resultados;

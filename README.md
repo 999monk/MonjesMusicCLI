@@ -1,25 +1,29 @@
 ﻿# MONJES
 
-Reproductor de música por consola minimalista. Busca y reproduce música de YouTube sin descargas permanentes. Sólo es necesario saber que es lo que queremos escuchar.
+Interfaz de línea de comandos minimalista para reproducir música vía YouTube con mpv + yt-dlp.
 
 ## Descripción
 
-Aplicación diseñada para escuchar música sin distracciones. Ideal para concentrarse mientras se trabaja, estudia o juega.
+MONJES es una CLI simple y directa para buscar y reproducir música desde YouTube, sin distracciones. 
+Usa `yt-dlp` para obtener el audio y `mpv` como motor de reproducción, integrando todo en un solo flujo desde la consola.
+Ideal para acompañarte mientras trabajás, estudiás o te concentrás.
 
 ![MONJES en funcionamiento](docs/screenshot.png)
 
-Características principales:
-- Búsqueda directa en YouTube.
-- Reproducción por streaming (sin descargas).
-- Interfaz simple.
-- Control básico de reproducción.
+### Características
 
-## Requisitos
+- Búsqueda por texto en YouTube sin navegador
+- Selección simple de pistas desde la consola
+- Reproducción por streaming sin archivos temporales
+- Comandos básicos para nueva búsqueda y salida
+- Funciona en cualquier sistema con .NET + mpv
 
-- .NET 6.0 o superior.
-- MPV (instalado y en PATH) (https://github.com/yt-dlp/yt-dlp).
-- yt-dlp (instalado y en PATH) (https://github.com/mpv-player/mpv).
-- Internet.
+### Requisitos
+
+- [.NET 6.0](https://dotnet.microsoft.com/) o superior
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) instalado y en el PATH
+- [mpv](https://mpv.io/) instalado y en el PATH
+- Conexión a Internet
 
 ## Instalación
 
@@ -28,39 +32,16 @@ Características principales:
 3. Compilar con `dotnet build`
 4. Ejecutar con `dotnet run`
 
-## Uso
+## Cómo usar
 
-1. Ingresa el término de búsqueda
-2. Selecciona una canción de los resultados (1-5)
-3. La música se reproduce automáticamente
+1. Ejecutá `dotnet run`
+2. Ingresá el nombre del tema/artista
+3. Elegí una opción de la lista (1-5)
+4. La reproducción comienza automáticamente con `mpv`
 
-### Controles durante reproducción
+Durante la reproducción:
+- `ENTER`: buscar otra canción
+- `Q`: salir
+- `0`: volver al menú principal
 
-- `ENTER`: Nueva búsqueda
-- `Q`: Salir de la aplicación
-- `0`: Salir desde el menú de selección
 
-## Arquitectura
-
-```
-MonjesMusicCLI/
-├── Core/
-│   ├── Models/
-│   │   └── ResultadoBusqueda.cs
-│   └── Services/
-│       ├── YoutubeDlService.cs
-│       └── MpvService.cs
-├── UI/
-│   └── ConsoleMenu.cs
-├── Program.cs
-└── MonjesMusicCLI.csproj
-```
-
-## Dependencias Externas
-
-- **yt-dlp**: Búsqueda y obtención de URLs de YouTube
-- **MPV**: Reproducción de audio por streaming
-
-## Versión
-
-v1.0 Completada y funcional. La aplicación cumple con todos los objetivos establecidos para la versión inicial y está lista para uso.

@@ -12,7 +12,6 @@ public class MpvService
     {
         try
         {
-            // Si ya hay un proceso reproduciéndose, detenerlo
             if (_procesoMpv != null && !_procesoMpv.HasExited)
             {
                 Stop();
@@ -31,14 +30,12 @@ public class MpvService
                 RedirectStandardInput = true,
                 CreateNoWindow = true
             };
-            // Crear y iniciar el proceso
+            
             _procesoMpv = new Process { StartInfo = startInfo };
-                
-            // Manejar eventos del proceso
+            
             _procesoMpv.EnableRaisingEvents = true;
             _procesoMpv.Exited += OnMpvExited;
-                
-            // Iniciar el proceso
+            
             _procesoMpv.Start();
                 
             Console.WriteLine($"reproduciendo: {url}");
@@ -62,9 +59,8 @@ public class MpvService
                 
                 _procesoMpv.CloseMainWindow();
                 
-                if (!_procesoMpv.WaitForExit(3000)) // 3 segundos
+                if (!_procesoMpv.WaitForExit(3000)) 
                 {
-                    // Si no se cierra, forzar la terminación
                     _procesoMpv.Kill();
                     Console.WriteLine("proceso MPV terminado.");
                 }
@@ -181,7 +177,7 @@ public class MpvService
     }
         
     /// <summary>
-    /// Liberar recursos al destruir el objeto
+    /// Liberar recursos 
     /// </summary>
     public void Dispose()
     {
